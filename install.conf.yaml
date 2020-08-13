@@ -1,0 +1,60 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- create:
+    - ~/.config/vdirsyncer
+    - ~/.gradle
+    - ~/.ssh
+    - ~/.todo
+    - ~/bin
+    - ~/git
+    - ~/usr/img
+
+- link:
+    ~/usr/img/tech_bg.jpg: img/tech_bg.jpg
+    ~/.bash_aliases:
+    ~/.gdbinit:
+    ~/.bash_logout:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.config/aerc:
+        glob: true
+        path: config/aerc/*
+    ~/.config/conky:
+        glob: true
+        path: config/conky/*
+    ~/.config/i3/config: config/i3/config
+    ~/.config/i3status/config: config/i3status/config
+    ~/.config/khard/khard.conf: config/khard/khard.conf
+    ~/.config/khal/config: config/khal/config
+    ~/.config/neofetch/config.conf: config/neofetch/config.conf
+    ~/.config/user-dirs.dirs: config/user-dirs.dirs
+    ~/.config/user-dirs.locale: config/user-dirs.locale
+    ~/.config/sublime-merge/Packages/User:
+        glob: true
+        path: config/subl-merge/*
+    ~/.config/sublime-text-3/Packages/User:
+        glob: true
+        path: config/subl/*
+    ~/.config/vdirsyncer/config: config/vdirsyncer/config
+    ~/.config/xfce4/terminal/terminalrc: config/xfce/terminalrc
+    ~/.gitconfig:
+    ~/.gradle/gradle.properties: gradle/gradle.properties
+    ~/.todo:
+        glob: true
+        path: todo/*
+    ~/.ssh:
+        glob: true
+        path: ssh/*
+    ~/.xinit.rc:
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [xdg-user-dirs-update && rm ~/.config/user-dirs.dirs, Update default dirs]
+
+- link:
+    # relink file because xdg-user-dirs-update deleted the link
+    ~/.config/user-dirs.dirs: config/user-dirs.dirs

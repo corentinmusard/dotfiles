@@ -1,0 +1,15 @@
+{
+	"font_face": "Hack",
+	"font_size": 9.5,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 4,
+	"theme": "Default.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

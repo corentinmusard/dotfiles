@@ -1,0 +1,16 @@
+[calendars]
+[[personal]]
+path = ~/.calendars/Personal/corentinmusard@gmail.com/
+color = light cyan
+
+[default]
+default_calendar = personal
+
+[locale]
+timeformat = %H:%M
+dateformat = %d/%m/%Y
+longdateformat = %d/%m/%Y
+datetimeformat = %d/%m/%Y %H:%M
+longdatetimeformat = %d/%m/%Y %H:%M
+unicode_symbols = False
+weeknumbers = right

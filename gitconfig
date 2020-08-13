@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Corentin Musard
+	email = corentinmusard@gmail.com
+	signingkey = 5B6FE3FCEF8B58D25E9AD531D14CF698A5758F2A
+
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[credential]
+	helper = cache --timeout=600

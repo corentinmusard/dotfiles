@@ -1,0 +1,22 @@
+# https://linux.die.net/man/5/ssh_config
+
+IdentitiesOnly yes
+
+Host woozi
+    HostName ssh-woozi.alwaysdata.net
+    User woozi
+    IdentityFile ~/.ssh/id_rsa_woozi
+
+Host turing
+    HostName turing.ujf-grenoble.fr
+    User musardc
+    ForwardX11 yes
+
+Host github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+
+Host perso
+    HostName ssh-corentinmusard.alwaysdata.net
+    User corentinmusard
+    IdentityFile ~/.ssh/id_ed25519_alwaysdata_perso

@@ -1,0 +1,51 @@
+# http://vdirsyncer.pimutils.org/
+
+[general]
+# A folder where vdirsyncer can store some metadata about each pair.
+status_path = "~/.vdirsyncer/status/"
+
+# CARDDAV
+[pair contacts_sync]
+a = "contacts_remote"
+b = "contacts_local"
+collections = ["from a", "from b"]
+conflict_resolution = "b wins"
+metadata = ["displayname"]
+
+[storage contacts_local]
+type = "filesystem"
+path = "~/.contacts/Personal"
+fileext = ".vcf"
+
+[storage contacts_remote]
+type = "carddav"
+url = "http://corentinmusard.alwaysdata.net/baikal/dav.php"
+auth = "basic"
+username = "corentin"
+password.fetch = ["command", "pass", "perso/baikal_user_corentin"]
+#verify = true
+#verify_fingerprint = null
+#auth_cert = null
+
+# CALDAV
+[pair calendar_sync]
+a = "calendar_remote"
+b = "calendar_local"
+collections = ["from a", "from b"]
+conflict_resolution = "b wins"
+metadata = ["displayname"]
+
+[storage calendar_local]
+type = "filesystem"
+path = "~/.calendars/Personal"
+fileext = ".ics"
+
+[storage calendar_remote]
+type = "caldav"
+url = "http://corentinmusard.alwaysdata.net/baikal/dav.php"
+auth = "basic"
+username = "corentin"
+password.fetch = ["command", "pass", "perso/baikal_user_corentin"]
+#verify = true
+#verify_fingerprint = null
+#auth_cert = null

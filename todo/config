@@ -1,0 +1,17 @@
+# todo.txt directory (this should be an absolute path)
+export TODO_DIR=~/Sync/todo
+
+# todo/done/report.txt locations
+export TODO_FILE="$TODO_DIR/todo.txt"
+export DONE_FILE="$TODO_DIR/done.txt"
+export REPORT_FILE="$TODO_DIR/report.txt"
+
+# colors
+export PRI_A=$COLOR6
+export PRI_B=$COLOR1
+export PRI_C=$COLOR3
+export PRI_D=$COLOR5
+
+# colors for projects and contexts.
+export COLOR_PROJECT=$COLOR6
+export COLOR_CONTEXT=$COLOR6

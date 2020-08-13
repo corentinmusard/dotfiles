@@ -1,0 +1,4 @@
+[
+    // Show all errors
+    { "keys": ["ctrl+k"], "command": "sublime_linter_panel_toggle" },
+]
