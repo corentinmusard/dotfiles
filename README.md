@@ -1,5 +1,5 @@
 # dotfiles
-My personal dotfiles. Made with `dotbot`. Install with `./install`.
+My personal dotfiles. Made with `dotbot`. Config file is `install.conf.yaml`. Install with `./install`.
 
 | Category | Tool | Description |
 |----------|------|-------------|
@@ -13,11 +13,11 @@ My personal dotfiles. Made with `dotbot`. Install with `./install`.
 | contact | khard
 | todo list | todo_sh
 | sync calendar and contact | vdirsyncer
-| sync files | syncthing
+| sync files | syncthing | to share file easily between my computer and my phone
 
 ## Desktop environnement
 -   i3 
--   xinitrc
+-  `sudo lightdm-gtk-greeter-settings` to change the login screen and to display [bg.jpg](img/bg.jpg)
 
 ### Background
 | | | |
@@ -30,14 +30,14 @@ My personal dotfiles. Made with `dotbot`. Install with `./install`.
 | | | |
 |-|-|-|
 | terminal | xfce4-terminal | 
-| shell config | bashrc | 
+| shell config | bashrc | settings and some useful shortcut like swapusage
 | shortcuts | bash_aliases | 
 
 ## Editor
 | | | |
 |-|-|-|
-| editor | subl | 
-| git editor | subl-merge | 
+| editor | subl | fast and lightweight text editor
+| git editor | subl-merge | easier than git in CLI
 
 ## Dev dotfiles
 | | | |
@@ -48,6 +48,7 @@ My personal dotfiles. Made with `dotbot`. Install with `./install`.
 
 ## Misc
 -   user-dirs: default dirs
+-   police Hack: pacman -S ttf-hack
 
 ## PGP
 -   public.key: public old pgp key used in github
@@ -58,13 +59,11 @@ My personal dotfiles. Made with `dotbot`. Install with `./install`.
 -   id_rsa_woozi: key used to connect to woozi server
 -   id_ed25519_alwaysdata_perso: key to connect to a personal server
 
-
 ## TODO
 -   config firefox
--   police Hack: pacman -S ttf-hack
 -   /root/.bashrc
 -   archlinux.md
--   $HOME/bin
+-   screenshot
 
 ## aur git/
 -   aerc

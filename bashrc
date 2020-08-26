@@ -3,6 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Set strong umask
 umask 077
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -45,11 +46,28 @@ g() {
   fi
 }
 
+# Sort process by swap usage
 swapusage() {
     for file in /proc/*/status; do
         awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' "$file"
     done | sort -k 2 -n -r
 }
 
+trad() {
+    (cd ~/usr/doc/dev/python/translator/ && ./translator.py "$@")
+}
+
+# Write stdin to a temp file then open it with subl
+# Usage: echo "text" | tosubl
+tosubl() {
+    TMPDIR=${TMPDIR:-/tmp} # default to /tmp if TMPDIR isn't set
+    F=$(mktemp "$TMPDIR"/tosubl-XXXXXXXX)
+    cat > "$F"
+    subl "$F"
+    sleep .3 # give subl a little time to open the file
+    rm -f "$F" # file will be deleted as soon as subl closes it
+}
+
 # Add some alias
 . ~/.bash_aliases
+
