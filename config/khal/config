@@ -1,6 +1,10 @@
 [calendars]
 [[personal]]
 path = ~/.calendars/Personal/corentinmusard@gmail.com/
+color = light green
+
+[[menage]]
+path = ~/.calendars/Personal/menage/
 color = light cyan
 
 [default]

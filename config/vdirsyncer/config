@@ -9,7 +9,7 @@ status_path = "~/.vdirsyncer/status/"
 a = "contacts_remote"
 b = "contacts_local"
 collections = ["from a", "from b"]
-conflict_resolution = "b wins"
+conflict_resolution = "a wins"
 metadata = ["displayname"]
 
 [storage contacts_local]
@@ -32,8 +32,8 @@ password.fetch = ["command", "pass", "perso/baikal_user_corentin"]
 a = "calendar_remote"
 b = "calendar_local"
 collections = ["from a", "from b"]
-conflict_resolution = "b wins"
-metadata = ["displayname"]
+conflict_resolution = "a wins"
+metadata = ["displayname", "color"]
 
 [storage calendar_local]
 type = "filesystem"
