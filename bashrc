@@ -35,6 +35,7 @@ unset reset
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/git/flutter/bin"
+export PATH="$PATH:$HOME/.symfony/bin"
 
 # No arguments: `git status`
 # With arguments: acts like `git`

@@ -1,6 +1,7 @@
 # ~/.bash_aliases
 
 alias ls="ls --color=auto"
+alias grep="grep --color=auto"
 
 alias pwndbg="gdb -x /usr/share/pwndbg/gdbinit.py"
 alias peda="gdb -x /usr/share/peda/peda.py"

@@ -25,6 +25,7 @@
     ~/.config/conky:
         glob: true
         path: config/conky/*
+    ~/.config/dunst/dunstrc: config/dunst/dunstrc
     ~/.config/i3/config: config/i3/config
     ~/.config/i3status/config: config/i3status/config
     ~/.config/khard/khard.conf: config/khard/khard.conf
