@@ -1,3 +1,4 @@
+# https://wiki.archlinux.org/index.php/Dunst
 [global]
 font = Iosevka Term 11
 
@@ -141,7 +142,7 @@ separator_color = frame
 # Print a notification on startup.
 # This is mainly for error detection, since dbus (re-)starts dunst
 # automatically after a crash.
-startup_notification = true
+startup_notification = false
 
 # dmenu path.
 dmenu = /usr/bin/dmenu -p dunst:

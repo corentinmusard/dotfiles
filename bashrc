@@ -69,6 +69,12 @@ tosubl() {
     rm -f "$F" # file will be deleted as soon as subl closes it
 }
 
+# Download youtube playlist in $1
+dl() {
+    youtube-dl -x --audio-format mp3 -o '%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s' --no-check-certificate "$1"
+}
+
+
 # Add some alias
 . ~/.bash_aliases
 
