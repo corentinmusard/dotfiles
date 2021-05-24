@@ -40,7 +40,7 @@ export PATH="$PATH:$HOME/.symfony/bin"
 # No arguments: `git status`
 # With arguments: acts like `git`
 g() {
-  if [[ $# -gt 0 ]]; then
+  if [ $# -gt 0 ]; then
     git "$@"
   else
     git status
@@ -52,10 +52,6 @@ swapusage() {
     for file in /proc/*/status; do
         awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' "$file"
     done | sort -k 2 -n -r
-}
-
-trad() {
-    (cd ~/usr/doc/dev/python/translator/ && ./translator.py "$@")
 }
 
 # Write stdin to a temp file then open it with subl

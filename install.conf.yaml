@@ -58,3 +58,6 @@
 - link:
     # relink file because xdg-user-dirs-update deleted the link
     ~/.config/user-dirs.dirs: config/user-dirs.dirs
+
+- shell:
+    - [./package_install.sh, Installing packages]

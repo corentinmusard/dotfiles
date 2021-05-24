@@ -1,5 +1,5 @@
 # todo.txt directory (this should be an absolute path)
-export TODO_DIR=~/Sync/todo
+export TODO_DIR=~/usr/doc/todo
 
 # todo/done/report.txt locations
 export TODO_FILE="$TODO_DIR/todo.txt"
